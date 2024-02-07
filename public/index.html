@@ -19,7 +19,7 @@
 
         function setup() {
             const tree = document.getElementById('tree');
-            var cnv = createCanvas(tree.offsetWidth * 1.2, tree.offsetHeight * 0.5);
+            var cnv = createCanvas(tree.offsetWidth * 1.2, tree.offsetHeight);
             cnv.parent('tree');
         }
 
@@ -51,13 +51,25 @@
 <body>
 <div class="root">
     <div class="just-column">
-        <h1 style="padding-top: 10vh">안녕하세요</h1>
-        <div id="tree">
-
+        <h1 style="padding-top: 10vh">안녕하세요 이강현입니다</h1>
+        <div class="just-row">
+            <a href="https://www.github.com/bestswlkh0310" target="_blank">
+                <img class="icon" src="github.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/g_3.14/" target="_blank">
+                <img class="icon" src="instagram.svg" alt="">
+            </a>
+            <a href="https://theotherday.notion.site/Kanghyun-Lee-s-Portfolio-7d4d8032a0a449ab80a52686c20b0a8b?pvs=4" target="_blank">
+                <img class="icon" src="notion.png" alt="">
+            </a>
         </div>
-        <audio controls autoplay>
-            <source src="music.mp3" type="audio/mpeg">
-        </audio>
+        <div class="present">
+            <div id="tree">
+            </div>
+            <audio controls autoplay id="audio" loop>
+                <source src="music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </div>
 </div>
 </body>

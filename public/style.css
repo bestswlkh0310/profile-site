@@ -13,7 +13,7 @@ body {
 
 #tree {
     width: 30vw;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,3 +26,30 @@ body {
     align-items: center;
 }
 
+.just-row {
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    &:hover {
+        scale: 0.9;
+    }
+    margin: 0 20px;
+}
+
+.present {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 50px 50px 0 0;
+    align-items: center;
+    width: 100%;
+}
+
+#audio {
+    width: 100%;
+}
